@@ -1,5 +1,6 @@
 require 'date'
 
+#articles from import.csv
 article1 = Article.create(
   title: "Brazil opens vast Amazon reserve to mining",
   description: "Brazil's government has abolished a vast national reserve in the Amazon to open up the area to mining. The area, covering 46,000 sq km (17,800 sq miles), straddles the northern states of Amapa and Para, and is thought to be rich in gold, and other minerals. The government said nine conservation and indigenous land areas within it would continue to be legally protected. But activists have voiced concern that these areas could be badly compromised. A decree from President Michel Temer abolished a protected area known as the National Reserve of Copper and Associates (Renca). Its size is larger than Denmark and about 30% of it will be open to mining. The mining and energy ministry says protected forest areas and indigenous reserves will not be affected. 'The objective of the measure is to attract new investments, generating wealth for the country and employment and income for society, always based on the precepts of sustainability,' the ministry said in a statement.",
@@ -237,3 +238,9 @@ The new “Standard Tier” should offer performance comparable to what customer
   created_at: Time.strptime('03/15/2016', '%m/%d/%Y'),
   updated_at: Time.strptime('03/17/2017', '%m/%d/%Y')
 )
+
+#tags from import.csv
+tag1 = Tag.create(name: 'Brazil')
+tag1 = Tag.create(name: 'amazon')
+tag1 = Tag.create(name: 'Google')
+tag1 = Tag.create(name: 'depression')
