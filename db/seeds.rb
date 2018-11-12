@@ -1,9 +1,8 @@
-require 'date'
-
 #articles from import.csv
 article1 = Article.create(
   title: "Brazil opens vast Amazon reserve to mining",
   description: "Brazil's government has abolished a vast national reserve in the Amazon to open up the area to mining. The area, covering 46,000 sq km (17,800 sq miles), straddles the northern states of Amapa and Para, and is thought to be rich in gold, and other minerals. The government said nine conservation and indigenous land areas within it would continue to be legally protected. But activists have voiced concern that these areas could be badly compromised. A decree from President Michel Temer abolished a protected area known as the National Reserve of Copper and Associates (Renca). Its size is larger than Denmark and about 30% of it will be open to mining. The mining and energy ministry says protected forest areas and indigenous reserves will not be affected. 'The objective of the measure is to attract new investments, generating wealth for the country and employment and income for society, always based on the precepts of sustainability,' the ministry said in a statement.",
+  author: "BBC",
   created_at: Time.strptime('04/12/2016', '%m/%d/%Y'),
   updated_at: Time.strptime('04/12/2017', '%m/%d/%Y')
 )
@@ -27,6 +26,7 @@ However, one psychotherapist said the idea seemed 'terribly redundant'.
 Someone googling depression will probably not find more useful information via a short diagnostic than they have already surfaced in search results, argued Dr Aaron Balick, author of 'The Psychodynamics of Social Netowrking'.
 'A better approach would be some sort of acknowledgment that the searcher may be feeling down, and offering them resources and a direct line - perhaps a chat box - to local psychological services,' he told the BBC.
 ",
+  author: "Dave Lee",
   created_at: Time.strptime('11/15/2016', '%m/%d/%Y'),
   updated_at: Time.strptime('11/18/2016', '%m/%d/%Y')
 )
@@ -39,6 +39,7 @@ He had been sidelined by Jose Mourinho at United, and also by Southgate with Eng
 Rooney, who originally planned to end his England career after next summer's World Cup in Russia, decided against a return and will now focus fully on Everton.
 So how will history judge Wayne Rooney's England career?
 ",
+  author: "BBC Sport",
   created_at: Time.strptime('04/12/2012', '%m/%d/%Y'),
   updated_at: Time.strptime('06/19/2017', '%m/%d/%Y')
 )
@@ -54,6 +55,7 @@ World number 10 Kei Nishikori is also out after tearing a tendon in his right 
 Raonic said he was unable give 'full effort' as a result of his injury.
 'I have too much respect for the US Open and my fellow competitors to take a spot in the draw when I know I cannot give full effort due to this injury,' he said.
 ",
+  author: "BBC Sports",
   created_at: Time.strptime('03/02/2015', '%m/%d/%Y'),
   updated_at: Time.strptime('03/05/2015', '%m/%d/%Y')
 )
@@ -72,6 +74,7 @@ The stunner’s job is to shoot a seven-inch steel bolt, roughly the width of a 
 Then the dead animal is moved from the conveyor belt to a trolley overhead and carried to the bleeding area, where its throat is cut. Roughly 392 cows are slaughtered per hour at a typical slaughterhouse (like the one in Kansas that Pollan described).
 This is the culmination of human achievement in meat processing so far (don’t even get me started on chickens).
 ",
+  author: "TechCrunch",
   created_at: Time.strptime('08/07/2013', '%m/%d/%Y'),
   updated_at: Time.strptime('08/07/2013', '%m/%d/%Y')
 )
@@ -88,6 +91,7 @@ And while Seattle’s booming economy is often attributed to a wide variety of f
 Amazon now occupies more office space than the next 40 biggest employers in the city combined.
 And that’s only the beginning: Amazon’s Seattle footprint of 8.1 million square feet is expected to soar to more than 12 million square feet within five years.
 ",
+  author: "Amazon",
   created_at: Time.strptime('03/06/2011', '%m/%d/%Y'),
   updated_at: Time.strptime('03/09/2016', '%m/%d/%Y')
 )
@@ -98,6 +102,7 @@ article7 = Article.create(
 The crumbling of Google’s cornerstone
 Search was Google’s only unambiguous win, as well as its primary source of revenue, so when Amazon rapidly surpassed Google as the top product search destination, Google’s foundations began to falter. As many noted at the time, the online advertising industry experienced a major shift from search to discovery in the mid-2010s.
 While Google protected its monopoly on the dying search advertising market, Facebook — Google’s biggest competitor in the online advertising space — got on the right side of the trend and dominated online advertising with its in-feed native display advertising.",
+  author: "Hackernoon",
   created_at: Time.strptime('07/02/2012', '%m/%d/%Y'),
   updated_at: Time.strptime('06/08/2014', '%m/%d/%Y')
 )
@@ -108,6 +113,7 @@ article8 = Article.create(
 s students have been celebrating their exam results, pundits from across the political spectrum have been commiserating the state of British universities. Andrew Adonis, an education minister during the Blair years, has excoriated universities for offering costly courses while jacking up the pay of their senior leaders. Nick Timothy, Theresa May’s ex-advisor, thinks UK universities are an unsustainable “Ponzi scheme”. The universities minister, Jo Johnson, has written about the need to put further pressure on seats of higher learning so students get good value for money.
 Behind the political point-scoring are more serious issues. The university sector has been growing for decades, but now that growth is going into reverse. The number of undergraduates applying to universities has fallen by 4% this year. Although close to 50% of the population goes through higher education, only about 20% of jobs require an undergraduate degree. One US study found that 46% of students showed no improvement in their cognitive skills during their time at university. In some courses, like business administration, students’ capacity to think got worse for the first few years. And after they graduated, many struggled to find full-time work while being loaded down with debt. Nearly a quarter of graduates were living with their parents or relatives.
 ",
+  author: "Guardian",
   created_at: Time.strptime('05/12/2015', '%m/%d/%Y'),
   updated_at: Time.strptime('05/14/2015', '%m/%d/%Y')
 )
@@ -123,6 +129,7 @@ Technical Details
 The meat of this update is the added support for low-stress biking. Our original goal was to introduce a new “low-stress bike” costing class derived from the regular bike costing class. However, after doing this, we realized that the algorithms of the new LowStressBicycleCost class were actually cleaner and easier to manage than our original bike costing algorithms. This inspried us to rewrite the old bike code to look like the new low-stress bike code. This way, the use_roads and use_hills parameters acted as variables that scale the costs of edges (i.e. road segments) with particular attributes in a way that provides low-stress biking at one end of the spectrum, and professional road biking on the other.
 When originally making the LowStressBicycleCost class, we made use of research by Michael B. Lowry at the University of Idaho, Peter Furth at Northeastern, and Tracy Hadden-Loh with the Rails-to-Trails Conservancy. Their paper titled “Low-Stress Neighborhood Bikeability Assessment to Prioritize Bicycle Infrastructure” provides a way to score a road based on how stressful it is to bike on. Here are the variables that are included in the score:
 ",
+  author: "Mapzen",
   created_at: Time.strptime('05/12/2015', '%m/%d/%Y'),
   updated_at: Time.strptime('12/12/2016', '%m/%d/%Y')
 )
@@ -148,6 +155,7 @@ Retained Things
 More importantly, what remains?
 What may be initially most important to C programmers is memory safety in the form of array overflow checking, no more stray pointers into expired stack frames, and guaranteed initialization of locals. This is followed by what is expected in a modern language — modules, function overloading, constructors, member functions, Unicode, nested functions, dynamic closures, Compile Time Function Execution, automated documentation generation, highly advanced metaprogramming, and Design by Introspection.
 ",
+  author: "D Lang",
   created_at: Time.strptime('10/10/2010', '%m/%d/%Y'),
   updated_at: Time.strptime('11/11/2011', '%m/%d/%Y')
 )
@@ -176,6 +184,7 @@ PS (still 2017-03): Here are ways that Racket is indeed vastly superior to CL, t
 	•	Racket has a standard, portable, gui.
 	•	Racket has a lively, healthy, user and developer community.
 ",
+  author: "Live Journal",
   created_at: Time.strptime('06/20/2016', '%m/%d/%Y'),
   updated_at: Time.strptime('12/20/2016', '%m/%d/%Y')
 )
@@ -192,6 +201,7 @@ Stranded Assets
 The study’s authors, Geoffrey Supran and Naomi Oreskes, both scholars of scientific history at Harvard in Cambridge, Massachusetts, reviewed 187 climate change communications issued by Exxon between 1977 and 2014. Their article, “Assessing Exxon Mobil’s climate change communications,” was published Wednesday.
 While 83 percent of Exxon’s peer-reviewed scientific papers and 80 percent of its internal documents acknowledge climate change is real and human-caused, 81 percent of its advertorials expressed doubt over the issue, according to the research. Internal documents accepted the risk of stranded assets caused by climate change, while the advertorials did not.
 ",
+  author: "Bloomberg",
   created_at: Time.strptime('03/03/2013', '%m/%d/%Y'),
   updated_at: Time.strptime('04/04/2014', '%m/%d/%Y')
 )
@@ -207,6 +217,7 @@ Her work began in the realm of pure mathematics, but unlike most mathematical ad
 Rogue Waves
 Localization is not an intuitive concept. Imagine you stood on one side of a room and watched someone ring a bell, only the sound never reached your ears. Now imagine that the reason it didn’t is that the sound had fallen into an architectural trap, like the sound of the sea bottled in a shell.
 ",
+  author: "Quanta Magazine",
   created_at: Time.strptime('12/03/2013', '%m/%d/%Y'),
   updated_at: Time.strptime('11/02/2014', '%m/%d/%Y')
 )
@@ -225,6 +236,7 @@ This tutorial assumes some familiarity with programming and C syntax. The code i
 The full implementation is around 200 lines of code, and should take around an hour or two to work through.
 
 ",
+  author: "Github",
   created_at: Time.strptime('12/12/2012', '%m/%d/%Y'),
   updated_at: Time.strptime('11/11/2015', '%m/%d/%Y')
 )
@@ -235,12 +247,7 @@ article15 = Article.create(
 Google has long argued that one of the best reasons to use its public cloud service is the strength of its fiber network, developed and enhanced for more than a decade to support the global data centers powering its search engine. But there are some applications that don’t require that level of performance, and so Google is now offering a cheaper networking service that uses the transit networks that deliver the bulk of traffic to internet service providers, said Prajakta Joshi, product manager for cloud networking at Google.
 The new “Standard Tier” should offer performance comparable to what customers would experience through “other cloud providers,” Joshi said, although both Amazon Web Services and Microsoft Azure operate fiber networks outside of the public internet. A basic networking 101 reminder: most internet traffic passes through a number of different intersections from its source on the way to its destination, but Google’s “Premium Tier” network was built outside that system to support its global search ambitions by reducing the number of “hops” data is forced to take along the way.
 ",
+  author: "Geek Wire",
   created_at: Time.strptime('03/15/2016', '%m/%d/%Y'),
   updated_at: Time.strptime('03/17/2017', '%m/%d/%Y')
 )
-
-#tags from import.csv
-tag1 = Tag.create(name: 'Brazil')
-tag1 = Tag.create(name: 'amazon')
-tag1 = Tag.create(name: 'Google')
-tag1 = Tag.create(name: 'depression')

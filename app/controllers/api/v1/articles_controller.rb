@@ -13,6 +13,7 @@ class Api::V1::ArticlesController < ApplicationController
         article_id: @article.id,
         title: @article.title,
         description: @article.description,
+        author: @article.author,
         created_at: @article.created_at,
         updated_at: @article.updated_at
       }
@@ -43,6 +44,7 @@ class Api::V1::ArticlesController < ApplicationController
       :article_id,
       :title,
       :description,
+      :author,
       :created_at,
       :updated_at
     )
