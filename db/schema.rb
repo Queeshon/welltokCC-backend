@@ -16,11 +16,12 @@ ActiveRecord::Schema.define(version: 20181109200716) do
   enable_extension "plpgsql"
 
   create_table "articles", force: :cascade do |t|
-    t.integer "article_id"
+    t.bigint "author_id"
     t.string "title"
     t.string "description"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["author_id"], name: "index_articles_on_author_id"
   end
 
   create_table "authors", force: :cascade do |t|

@@ -2,7 +2,15 @@ class Api::V1::ArticlesController < ApplicationController
 
   def index
     @articles = Article.all
-    render json: @articles
+    newArticles = []
+    @articles.each { |article|
+      newArticles.push({
+        article: article,
+        author: article.author,
+        tags: article.tags
+      })
+    }
+    render json: newArticles
   end
 
   def create
