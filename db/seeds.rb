@@ -7,6 +7,8 @@ csv.each do |row|
   article = Article.new
   article.title = row['title']
   article.description = row['description']
+  article.created_at = row['created_at']
+  article.updated_at = row['updated_at']
   if Author.find_by(name: row['author'])
     article.author = Author.find_by(name: row['author'])
   else
