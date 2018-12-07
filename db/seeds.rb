@@ -14,10 +14,8 @@ csv.each do |row|
   else
     article.author = Author.create(name: row['author'])
   end
-  row['tags'].each do |tag|
-    if !article.tags.find_by(name: tag)
-      article.author = Tag.create(name: tag)
-    end
-  end
   article.save
+  row['tags'].split(', ').each do |tag|
+    article.tags.find_or_create_by(name: tag)
+  end
 end
